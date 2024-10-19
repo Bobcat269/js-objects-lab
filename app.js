@@ -423,7 +423,7 @@ console.log(pokemon[147].name)
 game.catchPokemon(147)
 
 
-//We will do 20 and 21 on Monday morning
+//We will do 20 and 21 on Monday morning lab time
 /*
 Exercise 20
 Copy the `catchPokemon` method that you just wrote above, and paste it below. Modify is so that you can just pass in the name of a Pokemon instead 
