@@ -191,6 +191,7 @@ game.catchPokemon = function(pokemonObj){
     game.items[1].quantity--
 } 
 game.catchPokemon(29)
+console.log
 
 /*
 Exercise 12
@@ -427,16 +428,54 @@ game.catchPokemon(147)
 /*
 Exercise 20
 Copy the `catchPokemon` method that you just wrote above, and paste it below. Modify is so that you can just pass in the name of a Pokemon instead 
-of an entire object, and the method will look up the Pokemon from the data set for you.
+of an entire object, and the method will look up the Pokemon from the data set for you.  --loop 
 
 The string passed in should be allowed to be any case (for example, if the string 'PiKacHU' 
-is passed to the function, it should match to 'Pikachu' in the data set). 
+is passed to the function, it should match to 'Pikachu' in the data set). --toLower () === toLower() or however that's written.
+
 
 If there is not a match, then return a string noting that the selected Pokemon does not exist. Ensure you do not decrement the pokeball count 
 if an invalid Pokemon name is passed in, and also ensure that the Pokemon isn't added to the `game.party` or the `game.collection`.
 
+//Future note: investigate why this causes an error.
 Solve Exercise 20 here:
 */
+
+// game.catchPokemon = function(pokemonName){
+
+//   let pokemonID = undefined;
+//   for (let i = 0; i <= pokemon.length; i++)
+//   {
+//     if (pokemon[i].name.toLowerCase() === pokemonName.toLowerCase()){
+//       pokemonID = i
+//     } 
+//   }
+//   if(pokemonID === pokemon.length) {
+
+//     console.log('The selected pokemon does not exist')
+//   } else {
+//   if(game.items[1].quantity < 1){
+//     const x = pokemon[pokemonObj].name
+//     console.log(`There are not enough pokeballs to catch ${x}`)
+//   } else{
+//   if(game.party.length > 5){
+//     console.log(`You had too many pokemon if your party so ${game.party[(game.party.length-1)].name} was sent to a farm up north`)
+//     game.party.pop()
+//     game.party.push(pokemon[pokemonObj])
+//     game.items[1].quantity--
+//   } else {
+//   game.party.push(pokemon[pokemonObj])
+//   game.items[1].quantity--
+//   }
+//   console.log(game.items)
+//   }
+// }
+// } 
+
+// game.items[1].quantity = 4; //restore pokeball count for testing
+// game.catchPokemon('Chancy')
+// game.catchPokemon('ChANSEy')
+
 
 /*
 Exercise 21
